@@ -2,7 +2,7 @@ const postsHandlers = require("./index");
 
 describe("Endpoints", () => {
   describe("Posts", () => {
-    it.skip("Create a resources", async() => {
+    it("Create a resources", async() => {
       const mockUser = [{ id: 1 }, { id: 2 }];
       const post = {
         userId: 1,
@@ -35,7 +35,7 @@ describe("Endpoints", () => {
         ["https://jsonplaceholder.typicode.com/users"],
       ]);
     });
-    it.skip("Should not create if userId dont exist", async() => {
+    it("Should not create if userId dont exist", async() => {
       const mockUser = [{ id: 1 }, { id: 2 }];
       const post = {
         userId: 3,

@@ -3,7 +3,7 @@ const handlers = require("./index");
 describe("Endpoint", () => {
   describe("Users", () => {
     describe("Get", () => {
-      it.skip("return ti user json", async() => {
+      it("return ti user json", async() => {
         const axios = {
           get: jest.fn().mockResolvedValue({ data: 1 }),
         };
@@ -21,7 +21,7 @@ describe("Endpoint", () => {
       });
     });
     describe("Post", () => {
-      it.skip("Creates a resources", async() => {
+      it("Creates a resources", async() => {
         const axios = {
           post: jest.fn().mockResolvedValue({ data: 1 }),
         };
@@ -45,7 +45,7 @@ describe("Endpoint", () => {
       });
     });
     describe("Put", () => {
-      it.skip("Updates resoruce", async() => {
+      it("Updates resoruce", async() => {
         const axios = {
           put: jest.fn().mockResolvedValue({ data: 1 }),
         };
@@ -68,7 +68,7 @@ describe("Endpoint", () => {
       });
     });
     describe("Delete", () => {
-      it.skip("Delete resoruces", async() => {
+      it("Delete resoruces", async() => {
         const axios = {
           delete: jest.fn(),
         };
