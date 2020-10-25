@@ -21,3 +21,5 @@ app.post("/", authenticate, postsHandlers.post);
 app.listen(3000, () => {
   console.log("escuchando puerto 3000");
 });
+
+module.exports = app;

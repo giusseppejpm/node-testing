@@ -4,7 +4,7 @@ const handlers = ({ axios }) => ({
     const { data: users } = await axios.get(
       "https://jsonplaceholder.typicode.com/users"
     );
-    const found = users.find((el) => el.id === req.body.id);
+    const found = users.find((el) => el.id === req.body.userId);
     if (found) {
       const { data } = await axios.post(
         "https://jsonplaceholder.typicode.com/posts",
